@@ -1,62 +1,31 @@
 <!DOCTYPE html>
 <html lang="ru">
+    <link rel="stylesheet" href="dfd.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body{margin: 0;}
-        section{height: 100vh; display: flex; justify-content: space-around;}
-        section:nth-child(odd){background-color: aqua;}
-        section:nth-child(even){background-color: antiquewhite;}
-        section:nth-child(even) > img{order: 1;}
-        section > * {margin: 3% 5%; display: flex; flex-direction: column; justify-content: center; max-width: 50vw;}
-        img{object-fit: contain; border-radius: .5rem;}
-    </style>  
 </head>
 <body>
-    <section id="one">
-        <img src="https://images.unsplash.com/photo-1601758174039-617983b8cdd9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=chewy-Uk30T1yfVPI-unsplash.jpg&w=640" alt="">
-        <div>
-            <h3>Заголовок</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reprehenderit ullam exercitationem dolorum distinctio. Dolor, optio. Omnis, reiciendis veritatis alias minima odio obcaecati maiores aliquam officia, id ex officiis quasi!</p>
-            <button onclick="funcOne()">Кнопка</button>
-        </div>
-    </section>
-    <section>
-        <img src="https://images.unsplash.com/photo-1601758174039-617983b8cdd9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=chewy-Uk30T1yfVPI-unsplash.jpg&w=640" alt="">
-        <div>
-            <h3>Заголовок</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reprehenderit ullam exercitationem dolorum distinctio. Dolor, optio. Omnis, reiciendis veritatis alias minima odio obcaecati maiores aliquam officia, id ex officiis quasi!</p>
-        </div>
-    </section>
-    <section>
-        <img src="https://images.unsplash.com/photo-1601758174039-617983b8cdd9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=chewy-Uk30T1yfVPI-unsplash.jpg&w=640" alt="">
-        <div>
-            <h3>Заголовок</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reprehenderit ullam exercitationem dolorum distinctio. Dolor, optio. Omnis, reiciendis veritatis alias minima odio obcaecati maiores aliquam officia, id ex officiis quasi!</p>
-        </div>
-    </section>
-    <section>
-        <img src="https://images.unsplash.com/photo-1601758174039-617983b8cdd9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=chewy-Uk30T1yfVPI-unsplash.jpg&w=640" alt="">
-        <div>
-            <h3>Заголовок</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reprehenderit ullam exercitationem dolorum distinctio. Dolor, optio. Omnis, reiciendis veritatis alias minima odio obcaecati maiores aliquam officia, id ex officiis quasi!</p>
-        </div>
-    </section>
-    <script>
-        const varOne = document.querySelector('#one');
-
-        (function(){varOne.addEventListener('dblclick', funcOne)}())
-
-        function funcOne () {
-            if(varOne.style.backgroundColor == 'red'){
-                varOne.style.backgroundColor = 'green'
-            } else {
-                varOne.style.backgroundColor = 'red';
-            }
-            
-        }
-    </script>
+    <form name="test" method="post" action="input1.php">
+        <p><b>Ваше имя:</b><br>
+         <input type="text" size="40">
+        </p>
+        <p><b>Что вы желаете заказать</b><Br>
+         <input type="radio"  > Бургер<Br>
+         <input type="radio"  > Картошку фри<Br>
+         <input type="radio"  > Напитки<Br>
+        </p>
+        <p>Комментарий<Br>
+         <textarea name="comment" cols="40" rows="3"></textarea></p>
+        <p><input type="submit" value="Заказать">
+         <input type="reset" value="Очистить"></p>
+       </form>
+      
 </body>
 </html>
+<div class="about">
+    <div class="abou__item">
+      <img src="mcburgers-6962861.jpg" alt="">
+    <p>Контакты: телефон 8903464721  почта fastfood@gmail.com</p>
+    
